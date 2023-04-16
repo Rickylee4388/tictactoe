@@ -11,6 +11,25 @@
 </head>
 
 <body>
+    <img id="gameover" class="gameover d-none" src="img/game-over.png" alt="">
+    <button id="restartbutton" onclick="restart()" class="restartbutton">Restart</button>
+    <div class="playerdiv">
+        <div id="player-1">
+            <img src="img/circle.png" alt=""> Player 1
+        </div>
+        <div class="playerinactive" id="player-2">
+            <img src="img/cross.png" alt=""> Player 2
+        </div>
+    </div>
+<div class="tableandlines">
+    <div id="line-0" class="horizontalline" style="top: 63px;left: 57px;"></div>
+    <div id="line-1" class="horizontalline" style="top: 200px;left: 57px;"></div>
+    <div id="line-2" class="horizontalline" style="top: 343px;left: 57px;"></div>
+    <div id="line-3" class="verticalline" style="left: 60px;top: 57px;"></div>
+    <div id="line-4" class="verticalline" style="left: 205px;top: 57px;"></div>
+    <div id="line-5" class="verticalline" style="left: 343px;top: 57px;"></div>
+    <div id="line-6" class="verticalline" style="top:0px;left: 205px; transform: rotate(45deg) scaleX(0.0);    height: 400px;"></div>
+    <div id="line-7" class="verticalline" style="top:0px;left: 205px; transform: rotate(-45deg) scaleX(0.0);    height: 400px;"></div>
     <table>
         <tr>
             <td onclick="fillshape(0)">
@@ -55,6 +74,7 @@
             </td>
         </tr>
     </table>
+</div>
 </body>
 
 </html>
